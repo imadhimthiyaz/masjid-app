@@ -14,8 +14,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
 const PORT = process.env.PORT || 3000
 
-// Resolve uploads directory (client/public/uploads when serving from monorepo)
-const uploadsPath = process.env.UPLOADS_PATH || path.join(__dirname, '..', 'client', 'public', 'uploads')
+// Resolve uploads directory (client/public/uploads for local dev, server/uploads for production)
+const uploadsPath = process.env.UPLOADS_PATH || path.join(__dirname, 'uploads')
 app.use('/uploads', express.static(uploadsPath))
 
 app.use(cors({ origin: true, credentials: true }))

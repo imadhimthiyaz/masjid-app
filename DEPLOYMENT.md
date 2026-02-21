@@ -1,49 +1,37 @@
-# Deploy to Vercel (100% Free, No Backend)
+# Deployment
 
-This app deploys as a **fully static site** on Vercel. No backend, database, or external services.
+## Option A: Vercel + Railway (recommended – admin works)
 
-## How it works
+- **Frontend** on Vercel
+- **Backend** on Railway (admin panel, uploads, live data)
 
-- **Public pages** (Home, Projects, Events, etc.) read from static JSON files in `client/public/data/`
-- **Admin panel** is read-only in this mode – you cannot add/edit content from the UI
-- To update content: edit the JSON files in `client/public/data/` and push to trigger a new deploy
+See **[RAILWAY.md](./RAILWAY.md)** for step‑by‑step instructions.
 
-## Deploy steps
+---
 
-### 1. Push to GitHub
+## Option B: Vercel only (static, no backend)
 
-Ensure your code is in a GitHub repository.
+- **Public pages** read from static JSON in `client/public/data/`
+- **Admin panel** is read-only – edit JSON and redeploy to change content
 
-### 2. Deploy on Vercel
+### Deploy steps
 
-1. Go to [vercel.com](https://vercel.com) → Sign in with GitHub
-2. **Import** your repository
-3. Confirm settings:
-   - **Root Directory:** `masjid-app`
-   - **Build Command:** `npm run build:client`
-   - **Output Directory:** `client/dist`
-4. **Do not** add `VITE_API_URL` – leave it empty for static mode
-5. Click **Deploy**
+1. Push to GitHub
+2. [vercel.com](https://vercel.com) → Import repo
+3. Root: `masjid-app`, Build: `npm run build:client`, Output: `client/dist`
+4. **Do not** add `VITE_API_URL`
+5. Deploy
 
-### 3. Update content
+### Update content
 
-Edit these files in your repo and push:
+Edit `client/public/data/*.json` and push. Add images to `client/public/uploads/`.
 
-| File | Content |
-|------|---------|
-| `client/public/data/projects.json` | Projects |
-| `client/public/data/events.json` | Events |
-| `client/public/data/announcements.json` | Announcements |
-| `client/public/data/site.json` | Site name, hero, About, Contact, etc. |
+---
 
-For images: add files to `client/public/uploads/` and reference them as `/uploads/filename.jpg` in the JSON.
-
-## Local development with backend
-
-To run with the full backend (admin, uploads, live edits):
+## Local development
 
 ```bash
 npm run dev
 ```
 
-Then set `VITE_API_URL=http://localhost:3000` in `.env` if needed (the Vite proxy handles it by default).
+Runs frontend and backend. Vite proxy handles API calls.

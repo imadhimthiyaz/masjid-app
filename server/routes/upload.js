@@ -6,7 +6,7 @@ import fs from 'fs'
 import { requireAuth } from '../middleware/auth.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const uploadsDir = process.env.UPLOADS_PATH || path.join(__dirname, '..', '..', 'client', 'public', 'uploads')
+const uploadsDir = process.env.UPLOADS_PATH || path.join(__dirname, '..', 'uploads')
 
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true })
