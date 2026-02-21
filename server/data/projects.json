@@ -1,0 +1,35 @@
+[
+  {
+    "id": "mlvak6frpkdgl5uxhi",
+    "title": "shghgsc",
+    "description": "syuhjdvjswad",
+    "status": "ongoing",
+    "targetAmount": 6500000,
+    "currentAmount": 2000000,
+    "image": "/uploads/1771616185416-aqkolhoaige.JPG",
+    "video": "/uploads/1771622356745-6vjk0an1xr8.mp4",
+    "createdAt": "2026-02-20T19:37:08.247Z",
+    "updatedAt": "2026-02-20T21:19:21.033Z",
+    "images": [
+      "/uploads/1771616185416-aqkolhoaige.JPG",
+      "/uploads/1771622338460-c31vcikujt.png",
+      "/uploads/1771622338462-p6jl7l5esck.jpg"
+    ]
+  },
+  {
+    "id": "mlve9ck9wedetg4psk7",
+    "title": "YHGsfjhwsv dsnmsvujgfd",
+    "description": "ljkdfcywtugfsd mnf,db",
+    "status": "completed",
+    "targetAmount": 100000,
+    "currentAmount": 100000,
+    "images": [
+      "/uploads/1771622438263-cybj7iftyvp.JPG",
+      "/uploads/1771622438264-poomt2yw1kt.JPG",
+      "/uploads/1771622438266-6don3bvsau6.png"
+    ],
+    "video": "",
+    "createdAt": "2026-02-20T21:20:41.433Z",
+    "updatedAt": "2026-02-20T21:20:41.433Z"
+  }
+]

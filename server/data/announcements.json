@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Winter Prayer Times Update",
+    "content": "Please note that Asr and Maghrib times have been updated for the winter schedule. Updated timetable is displayed in the masjid and on our website.",
+    "publishedAt": "2025-02-01T00:00:00.000Z",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "updatedAt": "2025-02-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Volunteers Needed for Weekend School",
+    "content": "We are looking for volunteers to help with our weekend Islamic school. If you can spare a few hours on Sundays, please contact the office.",
+    "publishedAt": "2025-02-10T00:00:00.000Z",
+    "createdAt": "2025-02-10T00:00:00.000Z",
+    "updatedAt": "2025-02-10T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Main Hall Renovation Progress",
+    "content": "The main hall renovation is progressing well. We thank all donors. Please use the temporary entrance during construction.",
+    "publishedAt": "2025-02-15T00:00:00.000Z",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "updatedAt": "2025-02-15T00:00:00.000Z"
+  }
+]
